@@ -1,0 +1,19 @@
+version: '2'
+services:
+  abantecart-dev:
+     build: ./conf
+     ports:
+       - "8998:80"
+       - "8999:82"
+     volumes:
+       - ./www:/var/www
+       - ./conf/default:/etc/nginx/sites-available/default 
+  mysql:
+     image: mysql:5.7
+     command: --skip-name-resolve 
+     ports:
+       - "3310:3306"
+     volumes:
+       - ./mysql:/var/lib/mysql
+     environment:
+        MYSQL_ROOT_PASSWORD: admin
