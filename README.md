@@ -36,6 +36,6 @@ By default master branches will be installed however you can modify `start.sh` f
 
 
 ## Nginx
-NGINX configuration file is located in the docker/conf/default directory
+NGINX configuration file is located in the `docker/conf/default` directory https://github.com/abantecart/docker/blob/master/conf/default
 After modify make sure to restart NGINX to apply configuration with next command
-docker-compose exec abantecart-dev service nginx reload 
+`docker-compose exec abantecart-dev service nginx reload`
