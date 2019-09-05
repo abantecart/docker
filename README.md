@@ -13,3 +13,7 @@ mysql - database data
 www - AbanteCart files
 
 Take a note: server should start with 8998 port for 1.2.15 and 8999 for 2.0
+
+## Change ports
+
+If for some reason these ports not available you can modify docker-compose.yml https://github.com/abantecart/docker/blob/master/docker-compose.yml#L6
