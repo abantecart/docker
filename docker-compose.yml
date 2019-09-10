@@ -6,7 +6,7 @@ services:
        - "8998:80"
        - "8999:82"
      volumes:
-       - ./www:/var/www
+       - ./www:/var/www:cached
        - ./conf/default:/etc/nginx/sites-available/default 
   mysql:
      image: mysql:5.7
